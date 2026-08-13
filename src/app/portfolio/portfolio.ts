@@ -31,6 +31,9 @@ export class Portfolio {
     'linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)), url(filer.jpg)';
 
   images: PortfolioImage[] = [
+    { src: '568275838_18026039051743072_4596159081375165059_n.jpg', alt: 'Biomechanical skull and spine tattoo covering the upper back' },
+    { src: '607455240_18033846740743072_3019134241718634470_n.jpg', alt: 'Abstract dotwork tattoo with stars and ornamental swirls on the forearm' },
+    { src: '730628496_18057680060743072_810516089346641112_n.jpg', alt: 'Racing helmet tattoo with "Godspeed" script on forearm' },
     { src: 'SaveClip.me_660440723_18578842849015420_1037649969937574324_n.jpg', alt: 'Horror-themed forearm sleeve with elderly nun portrait and "Do Not Cross" tape band' },
     { src: 'SaveClip.me_661679063_18578842858015420_1585140597344446205_n.jpg', alt: 'Horror-themed sleeve tattoo detail with armed nuns and crime scene tape' },
     { src: 'SaveClip.me_735354665_18605886067015420_9067568772822370967_n.jpg', alt: 'Portrait tattoo of a woman in a feather headband with a bloodied hand over her mouth' },
