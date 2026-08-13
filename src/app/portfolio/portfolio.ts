@@ -57,6 +57,19 @@ export class Portfolio {
     { src: 'SaveInta.com_772265166_18064218698743072_4018973436552614878_n.jpg', alt: 'Black tribal spiky armband tattoo on forearm' },
     { src: 'SaveInta.com_773290936_18064211723743072_812301802961494287_n.jpg', alt: 'Crab constellation tattoo on ribs' },
     { src: 'SaveInta.com_773379106_18064213154743072_5046602977356262325_n.jpg', alt: 'Large-scale dragon and peony tattoo on shoulder' },
+    { src: 'SaveClip.App_670001795_17954745798006618_1756144357712975470_n.jpg', alt: 'Manchester City crest and realistic portrait half-sleeve tattoo' },
+    { src: 'SaveClip.App_671046884_17954745786006618_9060316732870158837_n.jpg', alt: 'Close-up of Manchester City crest and portrait forearm tattoo' },
+    { src: 'SaveClip.App_681127081_17956274460006618_1932524958847712225_n.jpg', alt: 'Snake and rabbit forearm tattoo alongside a Kuromi character rib tattoo' },
+    { src: 'SaveClip.App_683572261_17956274451006618_7290546571113260962_n.jpg', alt: 'Hello Kitty and teddy bear line tattoo with Kuromi rib tattoo' },
+    { src: 'SaveClip.App_683599188_17956274478006618_2321856002190440281_n.jpg', alt: 'Realistic black and grey snake tattoo on forearm' },
+    { src: 'SaveClip.App_722314051_17961524820006618_2694387760131887797_n.jpg', alt: 'Creation of Adam reaching hands tattoo on chest' },
+    { src: 'SaveClip.App_729674291_17963630583006618_7764791732632905461_n.jpg', alt: 'Jesus Christ portrait tattoo with crown of thorns on upper arm' },
+    { src: 'SaveClip.App_748396874_17965086462006618_8453223933407510121_n.jpg', alt: 'Realistic lion head tattoo with tribal accents on forearm' },
+    { src: 'SaveClip.App_753707787_17965956834006618_5003896698200885890_n.jpg', alt: 'Mechanical raven tattoo on inner elbow' },
+    { src: 'SaveClip.App_756612672_17965956375006618_3120827808494134835_n.jpg', alt: 'Mechanical raven tattoo with full wing detail on forearm' },
+    { src: 'SaveClip.App_759871963_17966455881006618_1866240395204906513_n.jpg', alt: 'Dark blackwork tattoo with skull, snake, and flowers on forearm and hand' },
+    { src: 'SaveClip.App_760930257_17966455173006618_7886373810378616691_n.jpg', alt: 'Dog and cat pet portrait tattoos on forearm' },
+    { src: 'SaveClip.App_774469185_17968083819006618_8122967372779720410_n.jpg', alt: 'Archangel Michael tattoo with prayer script on forearm' },
   ];
 
   displayedImages = computed(() => {
