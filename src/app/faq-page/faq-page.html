@@ -1,0 +1,37 @@
+<app-header navLabel="Home" navHref="/" [solid]="true"></app-header>
+
+<section class="faq-hero">
+    <h1>Frequently Asked<br>Questions</h1>
+</section>
+
+@for (section of sections; track $index; let sIndex = $index) {
+<section class="faq-band" [class.alt]="sIndex % 2 === 1">
+    @for (column of section.columns; track $index; let cIndex = $index) {
+    <div class="faq-column">
+        @if (column.heading) {
+        <h2 [class.italic]="column.italic">{{ column.heading }}</h2>
+        }
+
+        @if (column.image; as image) {
+        <div class="faq-image">
+            <img [src]="image.src" [alt]="image.alt" [title]="image.alt " />
+        </div>
+        } @else {
+        <div class="faq-list">
+            @for (faq of column.faqs; track faq.question; let fIndex = $index) {
+            <div class="faq-item" [class.open]="isOpen(sIndex, cIndex, fIndex)">
+                <button type="button" class="faq-question" (click)="toggle(sIndex, cIndex, fIndex)" [attr.aria-expanded]="isOpen(sIndex, cIndex, fIndex)">
+                    <span>{{ faq.question }}</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="faq-answer-wrap">
+                    <p class="faq-answer">{{ faq.answer }}</p>
+                </div>
+            </div>
+            }
+        </div>
+        }
+    </div>
+    }
+</section>
+}

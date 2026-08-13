@@ -1,0 +1,27 @@
+<div class="main" [class.solid]="solid()">
+    <a href="https://www.instagram.com/" class="social-icon" aria-label="Instagram">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="none" stroke="none"/></svg>
+    </a>
+    <a [href]="navHref()" class="lib">
+        <p>{{ navLabel() }}</p>
+    </a>
+    <div class="burger" [class.active]="isMenuOpen()" (click)="toggleMenu()">
+        <ul>
+            <li class="line1"></li>
+            <li class="line2"></li>
+        </ul>
+    </div>
+    <div class="nav-links" [style.height]="isMenuOpen() ? '100dvh' : '0px'">
+        <ul>
+            <li><a routerLink="/" (click)="toggleMenu()">Home</a></li>
+            <li><a routerLink="/portfolio" (click)="toggleMenu()">Gallery</a></li>
+            <li><a routerLink="/faqs" (click)="toggleMenu()">FAQs</a></li>
+        </ul>
+        <div class="navl1">
+            <a href="https://www.instagram.com/" class="social-icon" aria-label="Instagram">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="none" stroke="none"/></svg>
+            </a>
+            <a routerLink="/" fragment="appointment" class="book" (click)="toggleMenu()">Book A Sesion</a>
+        </div>
+    </div>
+</div>

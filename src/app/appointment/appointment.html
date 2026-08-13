@@ -1,0 +1,69 @@
+<section class="appointment" id="appointment">
+    <div class="appointment-container">
+        <h1>Request an appointment</h1>
+
+        @if (submitted()) {
+        <div class="success-message">
+            Thank you! Your appointment request has been sent. I'll get back to you soon.
+        </div>
+        } @else {
+        <form class="appointment-form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+            <div class="form-columns">
+                <div class="field field-first-name">
+                    <input type="text" placeholder="First name" aria-label="First name" formControlName="firstName" [class.invalid]="isInvalid('firstName')">
+                </div>
+                <div class="field field-last-name">
+                    <input type="text" placeholder="Last name" aria-label="Last name" formControlName="lastName" [class.invalid]="isInvalid('lastName')">
+                </div>
+                <div class="field field-email">
+                    <input type="email" placeholder="you@email.com" aria-label="Email" formControlName="email" [class.invalid]="isInvalid('email')">
+                </div>
+                <div class="field field-age">
+                    <input type="text" inputmode="numeric" placeholder="Your age" aria-label="Age" formControlName="age" [class.invalid]="isInvalid('age')">
+                </div>
+
+                <div class="field field-idea">
+                    <textarea rows="6" placeholder="Tell me about your tattoo idea..." aria-label="Tell me about your tattoo idea" formControlName="tattooIdea" [class.invalid]="isInvalid('tattooIdea')"></textarea>
+                </div>
+
+                <div class="field field-placement">
+                    <div class="select-wrap">
+                        <select aria-label="Placement" formControlName="placement" [class.invalid]="isInvalid('placement')" [class.placeholder]="!form.value.placement">
+                            <option value="" hidden>Select a placement</option>
+                            @for (option of placements; track option) {
+                            <option [value]="option">{{ option }}</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field field-file">
+                    <label class="file-drop" [class.disabled]="files().length >= maxFiles">
+                        <input type="file" accept="image/*" multiple aria-label="Add reference photos, up to {{ maxFiles }}" [disabled]="files().length >= maxFiles" (change)="onFilesSelected($event)" hidden>
+                        <span class="plus" aria-hidden="true"></span>
+                        <span>Add a File</span>
+                    </label>
+                    @if (files().length) {
+                    <ul class="file-list">
+                        @for (file of files(); track file.name; let i = $index) {
+                        <li>
+                            <span class="file-name">{{ file.name }}</span>
+                            <button type="button" (click)="removeFile(i)" aria-label="{{ 'Remove ' + file.name }}">&times;</button>
+                        </li>
+                        }
+                    </ul>
+                    }
+                </div>
+            </div>
+
+            @if (errorMessage()) {
+            <div class="error-message">{{ errorMessage() }}</div>
+            }
+
+            <button type="submit" class="submit-btn" [disabled]="sending()">
+                {{ sending() ? 'Sending...' : 'Submit Appointment Request' }}
+            </button>
+        </form>
+        }
+    </div>
+</section>

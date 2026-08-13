@@ -1,0 +1,33 @@
+@if (showHeader()) {
+<app-header navLabel="Home" navHref="/" class="portfolio-header"></app-header>
+<section class="filer filer--mobile-fallback"></section>
+} @else {
+<section class="filer"></section>
+}
+
+<section class="portfolio-hero" [class.with-header]="showHeader()" [style.background-image]="heroBackgroundImage">
+    <h1>Portfolio</h1>
+</section>
+
+<section class="portfolio-grid">
+    @for (img of displayedImages(); track img.src; let i = $index) {
+    <div class="grid-item" #gridItemEl [class.revealed]="isRevealed(i)" tabindex="0" role="button" aria-label="{{ 'View ' + img.alt }}" (click)="open(i)" (keydown.enter)="open(i)">
+        <img #imgEl [src]="img.src" alt="{{ img.alt }}" decoding="async" [attr.loading]="i < 4 ? 'eager' : 'lazy'" [attr.fetchpriority]="i === 0 ? 'high' : null" (load)="onImageLoad(i)">
+    </div>
+    }
+</section>
+
+@if (!showHeader()) {
+<div class="more-wrap">
+    <a routerLink="/portfolio" class="book">More Tattoos</a>
+</div>
+}
+
+@if (activeImage(); as img) {
+<div class="lightbox" (click)="onOverlayClick($event)">
+    <button type="button" class="lightbox-close" (click)="close(); $event.stopPropagation()" aria-label="Close">&times;</button>
+    <button type="button" class="lightbox-arrow lightbox-prev" (click)="prev($event)" aria-label="Previous image">&#10094;</button>
+    <img class="lightbox-image" [src]="img.src" alt="{{ img.alt }}">
+    <button type="button" class="lightbox-arrow lightbox-next" (click)="next($event)" aria-label="Next image">&#10095;</button>
+</div>
+}
