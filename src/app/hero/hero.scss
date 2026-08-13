@@ -9,6 +9,7 @@
     background-color: #000;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    
     &::before{
         content: '';
         position: absolute;
