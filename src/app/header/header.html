@@ -2,7 +2,7 @@
     <a href="https://www.instagram.com/" class="social-icon" aria-label="Instagram">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="none" stroke="none"/></svg>
     </a>
-    <a [href]="navHref()" class="lib">
+    <a [routerLink]="navHref()" class="lib">
         <p>{{ navLabel() }}</p>
     </a>
     <div class="burger" [class.active]="isMenuOpen()" (click)="toggleMenu()">
