@@ -30,7 +30,18 @@ export class Portfolio {
   heroBackgroundImage =
     'linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)), url(filer.jpg)';
 
-  images: PortfolioImage[] = [];
+  images: PortfolioImage[] = [
+    { src: 'InstaSave.to_518158073_18014296604743072_1377489836195853714_n.jpg', alt: 'Red linework snake tattoo wrapping around hip and thigh' },
+    { src: 'InstaSave.to_741828014_18059035850743072_5250763748853522636_n.jpg', alt: 'Floral tattoo with flowers, leaves, and angel wing on shoulder and upper arm' },
+    { src: 'InstaSave.to_742060285_18059034194743072_5612397009091980391_n.jpg', alt: 'Two connected sea turtles line tattoo on forearm' },
+    { src: 'InstaSave.to_742362164_18059033189743072_5871691728151086773_n.jpg', alt: 'Matching black flower and starburst tattoos on both calves' },
+    { src: 'InstaSave.to_763308679_18063114533743072_1782573993170416067_n.jpg', alt: 'Floral lotus rib and stomach tattoo with "amor" script and skull motif' },
+    { src: 'InstaSave.to_771802257_18064216553743072_8097706567373389068_n.jpg', alt: 'Holly leaves and berries tattoo on forearm' },
+    { src: 'InstaSave.to_772265166_18064218698743072_4018973436552614878_n.jpg', alt: 'Black tribal spiky armband tattoo on forearm' },
+    { src: 'InstaSave.to_773013657_18064215134743072_171515884735303911_n.jpg', alt: 'Ornamental filigree butterfly tattoo on ribs' },
+    { src: 'InstaSave.to_773290936_18064211723743072_812301802961494287_n.jpg', alt: 'Crab constellation tattoo on ribs' },
+    { src: 'InstaSave.to_773379106_18064213154743072_5046602977356262325_n.jpg', alt: 'Large-scale dragon and peony tattoo on shoulder' },
+  ];
 
   displayedImages = computed(() => {
     const limit = this.limit();
