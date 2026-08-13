@@ -31,18 +31,20 @@ export class Portfolio {
     'linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)), url(filer.jpg)';
 
   images: PortfolioImage[] = [
-    { src: '568275838_18026039051743072_4596159081375165059_n.jpg', alt: 'Biomechanical skull and spine tattoo covering the upper back' },
-    { src: '607455240_18033846740743072_3019134241718634470_n.jpg', alt: 'Abstract dotwork tattoo with stars and ornamental swirls on the forearm' },
-    { src: 'SaveClip.App_742060285_18059034194743072_5612397009091980391_n.jpg', alt: 'Two connected sea turtles line tattoo on forearm' },
-    { src: 'SaveInta.com_518158073_18014296604743072_1377489836195853714_n.jpg', alt: 'Red linework snake tattoo wrapping around hip and thigh' },
-    { src: 'SaveInta.com_741828014_18059035850743072_5250763748853522636_n.jpg', alt: 'Floral tattoo with flowers, leaves, and angel wing on shoulder and upper arm' },
-    { src: 'SaveInta.com_741968392_18059034185743072_8037032056922005722_n.jpg', alt: 'Sea turtle line tattoo close-up on forearm' },
-    { src: 'SaveInta.com_771757318_18064215152743072_7911027186258295102_n.jpg', alt: 'Ornamental filigree tattoo on ribs and hip' },
-    { src: 'SaveInta.com_771802257_18064216553743072_8097706567373389068_n.jpg', alt: 'Holly leaves and berries tattoo on forearm' },
-    { src: 'SaveInta.com_772265166_18064218698743072_4018973436552614878_n.jpg', alt: 'Black tribal spiky armband tattoo on forearm' },
-    { src: 'SaveInta.com_773290936_18064211723743072_812301802961494287_n.jpg', alt: 'Crab constellation tattoo on ribs' },
-    { src: 'SaveInta.com_773379106_18064213154743072_5046602977356262325_n.jpg', alt: 'Large-scale dragon and peony tattoo on shoulder' },
-    { src: '730628496_18057680060743072_810516089346641112_n.jpg', alt: 'Racing helmet tattoo with "Godspeed" script on forearm' },
+    { src: 'SaveClip.me_660440723_18578842849015420_1037649969937574324_n.jpg', alt: 'Horror-themed forearm sleeve with elderly nun portrait and "Do Not Cross" tape band' },
+    { src: 'SaveClip.me_661679063_18578842858015420_1585140597344446205_n.jpg', alt: 'Horror-themed sleeve tattoo detail with armed nuns and crime scene tape' },
+    { src: 'SaveClip.me_735354665_18605886067015420_9067568772822370967_n.jpg', alt: 'Portrait tattoo of a woman in a feather headband with a bloodied hand over her mouth' },
+    { src: 'SaveClip.me_735446756_18605886232015420_7227489210277851342_n.jpg', alt: 'Portrait tattoo of a blindfolded woman crowned with a laurel wreath' },
+    { src: 'SaveClip.me_743034535_18608080429015420_6523898804903247849_n.jpg', alt: 'Close-up black and grey dragon scale texture tattoo on shoulder' },
+    { src: 'SaveClip.me_750376568_18609386323015420_347492643520673953_n.jpg', alt: 'Ocean-themed sleeve tattoo with waves, sharks, a sea turtle, and manta rays' },
+    { src: 'SaveClip.me_754126889_18611638921015420_6090667558286196324_n.jpg', alt: 'Whiskey glass with ice cubes and script lettering tattoo on forearm' },
+    { src: 'SaveClip.me_755221049_18612268048015420_8437620006342058547_n.jpg', alt: 'Fox spirit woman portrait with cherry blossoms on sleeve' },
+    { src: 'SaveClip.me_756846606_18612268066015420_1056615076112629634_n.jpg', alt: 'Close-up of fox spirit mask and cherry blossoms sleeve tattoo' },
+    { src: 'SaveClip.me_757666045_18613856350015420_2524329103223615782_n.jpg', alt: 'Horror tattoo of a demonic creature bursting through skin with flames and chains' },
+    { src: 'SaveClip.me_761748335_18613856314015420_4383422252349968108_n.jpg', alt: 'Armored knight in chainmail holding a sword against a stained glass background' },
+    { src: 'SaveClip.me_768592384_18616233184015420_51821636420934068_n.jpg', alt: 'Hand tattoo of a lone figure walking a mountain landscape with zodiac symbols on the fingers' },
+    { src: 'SaveClip.me_747105637_18608702479015420_8117633935930322586_n.jpg', alt: 'Realistic eye and rose tattoo with memorial date script on forearm' },
+    { src: 'SaveClip.me_747796254_18608080438015420_8500585246467744554_n.jpg', alt: 'Black and grey dragon tattoo covering the shoulder and upper arm' },
   ];
 
   displayedImages = computed(() => {
