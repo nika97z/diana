@@ -48,6 +48,15 @@ export class Portfolio {
     { src: 'SaveClip.me_768592384_18616233184015420_51821636420934068_n.jpg', alt: 'Hand tattoo of a lone figure walking a mountain landscape with zodiac symbols on the fingers' },
     { src: 'SaveClip.me_747105637_18608702479015420_8117633935930322586_n.jpg', alt: 'Realistic eye and rose tattoo with memorial date script on forearm' },
     { src: 'SaveClip.me_747796254_18608080438015420_8500585246467744554_n.jpg', alt: 'Black and grey dragon tattoo covering the shoulder and upper arm' },
+    { src: 'SaveClip.App_742060285_18059034194743072_5612397009091980391_n.jpg', alt: 'Two connected sea turtles line tattoo on forearm' },
+    { src: 'SaveInta.com_518158073_18014296604743072_1377489836195853714_n.jpg', alt: 'Red linework snake tattoo wrapping around hip and thigh' },
+    { src: 'SaveInta.com_741828014_18059035850743072_5250763748853522636_n.jpg', alt: 'Floral tattoo with flowers, leaves, and angel wing on shoulder and upper arm' },
+    { src: 'SaveInta.com_741968392_18059034185743072_8037032056922005722_n.jpg', alt: 'Sea turtle line tattoo close-up on forearm' },
+    { src: 'SaveInta.com_771757318_18064215152743072_7911027186258295102_n.jpg', alt: 'Ornamental filigree tattoo on ribs and hip' },
+    { src: 'SaveInta.com_771802257_18064216553743072_8097706567373389068_n.jpg', alt: 'Holly leaves and berries tattoo on forearm' },
+    { src: 'SaveInta.com_772265166_18064218698743072_4018973436552614878_n.jpg', alt: 'Black tribal spiky armband tattoo on forearm' },
+    { src: 'SaveInta.com_773290936_18064211723743072_812301802961494287_n.jpg', alt: 'Crab constellation tattoo on ribs' },
+    { src: 'SaveInta.com_773379106_18064213154743072_5046602977356262325_n.jpg', alt: 'Large-scale dragon and peony tattoo on shoulder' },
   ];
 
   displayedImages = computed(() => {
